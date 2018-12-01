@@ -1,5 +1,8 @@
 import ReactDOM from 'react-dom';
-import React from 'React';
+import React from 'react';
+
+import 'normalize.css';
+
 import { App } from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 

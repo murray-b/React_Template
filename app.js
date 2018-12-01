@@ -6,7 +6,7 @@ const app = express();
 
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 2020;
-const connection = process.env.MONGODB_URI || 'mongodb://localhost/uapp';
+const connection = process.env.MONGODB_URI || config.dbURL;
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
